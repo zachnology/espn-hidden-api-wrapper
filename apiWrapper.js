@@ -13,17 +13,17 @@ const getTeamIdMapping = async (sport, league) => {
 };
 
 const getTeams = async (sport, league) => {
-  const resp = await fetch(`http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams`);
+  const resp = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams`);
   return await resp.json();
 };
 
 const getTeamInfo = async (sport, league, teamId) => {
-  const resp = await fetch(`http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams/${teamId}`);
+  const resp = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams/${teamId}`);
   return await resp.json();
 };
 
 const getTeamScheduleRaw = async (sport, league, teamId) => {
-  const resp = await fetch(`http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams/${teamId}/schedule`);
+  const resp = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams/${teamId}/schedule`);
   return await resp.json();
 }
 
@@ -37,7 +37,7 @@ const getTeamSchedule = async (sport, league, teamId) => {
 }
 
 const getRankingsRaw = async (sport, league) => {
-  const resp = await fetch(`http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/rankings`);
+  const resp = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/rankings`);
   return await resp.json();
 }
 

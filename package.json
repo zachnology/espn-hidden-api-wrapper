@@ -1,6 +1,6 @@
 {
   "name": "espn-hidden-api-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Wrapper for hidden ESPN public API",
   "main": "index.js",
   "scripts": {
